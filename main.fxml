@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450" prefWidth="700" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hangmangamejavafx.GameController">
+
+    <children>
+        <Text fx:id="asciiBoard" layoutX="42.0" layoutY="96.0" wrappingWidth="209.0">
+            <font><Font name="Monospaced Regular" size="28" /></font>
+        </Text>
+
+        <Label layoutX="300.0" layoutY="37.0" text="Letter or whole word:" textFill="WHITE">
+            <font>
+                <Font name="Arial Black" size="15.0" />
+            </font></Label>
+        <TextField fx:id="input" layoutX="300" layoutY="60" prefHeight="32.0" prefWidth="259.0" />
+        <Button fx:id="guessBtn" layoutX="574.0" layoutY="50.0" prefHeight="45.0" prefWidth="68.0" text="Guess">
+            <font>
+                <Font name="Arial Black" size="14.0" />
+            </font></Button>
+
+        <Text fx:id="maskedWord" layoutX="300" layoutY="160">
+            <font><Font name="Arial Black" size="43.0" /></font>
+        </Text>
+
+        <Text fx:id="statusText" layoutX="300" layoutY="220">
+            <font><Font name="Arial Black" size="26.0" /></font>
+        </Text>
+
+        <Text fx:id="usedLettersText" layoutX="300" layoutY="260">
+            <font>
+                <Font name="Arial Black" size="14.0" />
+            </font></Text>
+        <Text fx:id="triedWordsText" layoutX="300" layoutY="285">
+            <font>
+                <Font name="Arial Black" size="12.0" />
+            </font></Text>
+
+        <Button fx:id="playBtn" layoutX="261.0" layoutY="317.0" prefHeight="46.0" prefWidth="191.0" style="-fx-border-color: white;" text="Play">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Button>
+        <PointLight color="CHARTREUSE" lightOn="true" />
+        <PerspectiveCamera />
+        <ParallelCamera />
+        <AmbientLight color="CHARTREUSE" lightOn="true" />
+    </children>
+</AnchorPane>

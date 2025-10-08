@@ -13,6 +13,7 @@ public class MainApp extends Application {
         // Loads the FXML that defines the GUI
         FXMLLoader fxmlLoader = new FXMLLoader(MainApp.class.getResource("/main.fxml"));
 
+
         // Create the Scene from the loaded FXML (900x600)
         Scene scene = new Scene(fxmlLoader.load(), 900, 600);
 

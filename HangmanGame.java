@@ -1,3 +1,4 @@
+
 package com.example.hangmanjavafx;
 
 import java.io.BufferedReader;
@@ -121,7 +122,6 @@ public class HangmanGame {
         guess = guess.toUpperCase();
 
         // Validate input
-        //Lecture09-Regular Expressions page 8
         if (!guess.matches("[A-Z ]+")) {
             return WordResult.INVALID;
         }
@@ -178,7 +178,7 @@ public class HangmanGame {
         // This sorts it alphabetically for fancy points
         Collections.sort(misses);
 
-        StringBuilder builder = new StringBuilder ();
+        StringBuilder builder = new StringBuilder();
         for (int i = 0; i < misses.size(); i++) {
             builder.append(misses.get(i));
             if (i < misses.size() - 1) builder.append(' ');
@@ -192,3 +192,5 @@ public class HangmanGame {
         return String.join(", ", triedWords);
     }
 }
+
+

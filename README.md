@@ -1,2 +1,2 @@
-# HangMan-Game-code-project Grouo 8
+# HangMan-Game-code-project Group 8
 HangMan project game using JavaFX and Scene Builder.
